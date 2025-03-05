@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Set env as secret
         env:
-          MY_VAL: ${{ secrets.SECRET_REPO }}
+          MY_VAL: ${{ secrets.SUPPLYCHAINREPO}}
         run: |
           import os
           for q in (os.getenv("MY_VAL")):
